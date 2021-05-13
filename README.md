@@ -1,46 +1,30 @@
-# Getting Started with Create React App
+# Teste da empresa Buscapé para front-end
+ Esse projeto foi desenvolvido com base no layout do repositório de teste: https://github.com/buscapecompany/exercicios/blob/master/frontend/resources/layout.psd
+ Consiste numa tela com as funcionalidades de adicionar e retirar items do carrinho, para isso utilizo os Hooks useEffect, useContext e useState nativos do React, e para persistir os estados dos items selecionados os salvo na localStorage.
+ Além disso a aplicação tem um layout responsivo se adaptando a diferentes tamanhos de tela.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Captura de Tela 2021-05-13 às 11 27 15](https://user-images.githubusercontent.com/66284603/118140088-6b586980-b3de-11eb-9114-e82cad833a84.jpg)
 
-## Available Scripts
+![Captura de Tela 2021-05-13 às 11 27 55](https://user-images.githubusercontent.com/66284603/118140118-73b0a480-b3de-11eb-8e33-fce023e82292.jpg)
 
-In the project directory, you can run:
+![Captura de Tela 2021-05-13 às 11 30 49](https://user-images.githubusercontent.com/66284603/118140386-b3778c00-b3de-11eb-8113-935e1452b79f.jpg)
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+A aplicação é baseada em React em Typescript além de contar com:
+- Styled-components
+- Styled-icons
+- ESLint
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Execução do projeto:
 
-### `yarn test`
+Baixar dependencias
+yarn
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Iniciar projeto
+yarn start
 
-### `yarn build`
+Para saber mais sobre a biblioteaca utilizado para o projeto Frontend
+Para ver a utilização do comando Create React App documentation. Para aprender mais sobre React, acesse: React documentation.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Pontos a melhorar:
+- Inserir imagem default se a imagem estiver quebrada ou não for possivel fazer a requisição por algum motivo
