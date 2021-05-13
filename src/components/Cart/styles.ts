@@ -5,7 +5,9 @@ interface ICartProps {
 }
 
 export const Container = styled.div<ICartProps>`
-  display: ${({ showingCart }) => (showingCart ? 'flex' : 'none')};
+  opacity: ${({ showingCart }) => (showingCart ? '1' : '0')};
+  transition: opacity 1s ease-in-out;
+  display: flex;
   flex-direction: column;
   position: absolute;
   width: 100%;
