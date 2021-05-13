@@ -1,10 +1,7 @@
 import styled from 'styled-components'
+import { ICartProps, IInfosCartProps } from '../../constants/types'
 
-interface IInfosCartProps {
-  readonly isProductDescription?: boolean
-}
-
-export const Product = styled.div`
+export const Product = styled.div<ICartProps>`
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -14,6 +11,7 @@ export const Product = styled.div`
   margin: 3px 0;
   border-top: 2px solid var(--terciary);
   box-shadow: 0 0 5px var(--secundary);
+  position: ${({ showingCart }) => (showingCart ? 'static' : 'absolute')};
 `
 export const ProductInfo = styled.div`
   display: flex;

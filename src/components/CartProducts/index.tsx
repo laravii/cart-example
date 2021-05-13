@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { IProduct } from '../../constants/types'
+import { ICartComponentProps } from '../../constants/types'
 import { CartContext } from '../../contexts/CartContext'
 
 import {
@@ -11,11 +11,7 @@ import {
   Button,
 } from './styles'
 
-interface ICartProps {
-  items: IProduct[]
-}
-
-function CartProducts({ items }: ICartProps) {
+function CartProducts({ items, isOpen }: ICartComponentProps) {
   const { deletingProductAtCart } = useContext(CartContext)
 
   const formatedPrice = (value: number): string => {
@@ -33,7 +29,7 @@ function CartProducts({ items }: ICartProps) {
         const { price, name, images } = item
         const { installments, installmentValue, value } = price
         return (
-          <Product key={index}>
+          <Product showingCart={isOpen} key={index}>
             <ProductInfo>
               <ProductImage src={images[0]} alt="Foto do produto" />
               <InfosContainer>

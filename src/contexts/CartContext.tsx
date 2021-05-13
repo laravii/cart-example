@@ -1,9 +1,13 @@
 import React, { createContext, useState } from 'react'
-import { ICartContextData, ICartProps, IProduct } from '../constants/types'
+import {
+  ICartContextData,
+  ICartContextProps,
+  IProduct,
+} from '../constants/types'
 
 export const CartContext = createContext({} as ICartContextData)
 
-export const CartProvider = ({ children }: ICartProps) => {
+export const CartProvider = ({ children }: ICartContextProps) => {
   const [cart, setCart] = useState<IProduct[]>([])
   const productsAtCart: IProduct[] = []
   const selectedProductsSaves = localStorage.getItem('@Cart')

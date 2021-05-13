@@ -1,15 +1,10 @@
 import React from 'react'
-import { IProduct } from '../../constants/types'
+import { ICartComponentProps } from '../../constants/types'
 import CartProducts from '../CartProducts'
 
 import { Container, Line, SubtotalContainer } from './styles'
 
-interface ICartProps {
-  items: IProduct[]
-  isOpen: boolean
-}
-
-function Cart({ items, isOpen }: ICartProps) {
+function Cart({ items, isOpen }: ICartComponentProps) {
   const values = items.map((item) => item.price.value)
   const installmentValue = items.map((item) => item.price.installmentValue)
 
@@ -29,7 +24,7 @@ function Cart({ items, isOpen }: ICartProps) {
 
   return (
     <Container showingCart={isOpen}>
-      <CartProducts items={items} />
+      <CartProducts isOpen={isOpen} items={items} />
       <SubtotalContainer>
         <strong>subtotal</strong>
         <Line />
