@@ -1,7 +1,7 @@
 # Simulação de carrinho de compras
 
 Esse projeto consiste numa tela com as funcionalidades de adicionar e retirar items do carrinho, para isso utilizo React.
-A ideia é baseada no layout do repositório seguinte layout: https://github.com/buscapecompany/exercicios/blob/master/frontend/resources/layout.psd
+A ideia é baseada no layout do repositório: https://github.com/buscapecompany/exercicios/blob/master/frontend/resources/layout.psd
 
 ![Captura de Tela 2021-05-13 às 11 27 15](https://user-images.githubusercontent.com/66284603/118140088-6b586980-b3de-11eb-9114-e82cad833a84.jpg)
 
