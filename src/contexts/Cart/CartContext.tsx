@@ -1,9 +1,6 @@
 import React, { createContext, useState } from 'react'
-import {
-  ICartContextData,
-  ICartContextProps,
-  IProduct,
-} from '../constants/types'
+import { IProduct } from '../../constants/productInterfaces'
+import { ICartContextProps, ICartContextData } from './interface'
 
 export const CartContext = createContext({} as ICartContextData)
 

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import { ICartProps, IInfosCartProps } from '../../constants/types'
+import { ICartProps, IInfosCartProps } from './interface'
 
-export const Product = styled.div<ICartProps>`
+export const ProductCard = styled.div<ICartProps>`
   display: flex;
   justify-content: space-between;
   width: 100%;

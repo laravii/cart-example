@@ -7,7 +7,7 @@ import {
   Button,
 } from './styles'
 import BuscapeLogo from '../../assets/logo.svg'
-import { CartContext } from '../../contexts/CartContext'
+import { CartContext } from '../../contexts/Cart/CartContext'
 import Cart from '../Cart'
 
 function Header() {
@@ -25,7 +25,7 @@ function Header() {
   ])
 
   const openingCart = () => {
-    openMenu === false ? setOpenMenu(true) : setOpenMenu(false)
+    setOpenMenu(!openMenu)
   }
 
   return (

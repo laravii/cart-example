@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { ICartProps } from '../../constants/types'
+import { ICartProps } from './interface'
 
 export const Container = styled.div<ICartProps>`
   opacity: ${({ showingCart }) => (showingCart ? '1' : '0')};
@@ -14,19 +14,15 @@ export const Container = styled.div<ICartProps>`
   padding-bottom: 10px;
   z-index: ${({ showingCart }) => (showingCart ? '2' : '0')};
   background-color: var(--terciary);
-
   @media (min-width: 320px) {
     top: 7.5%;
   }
-
   @media (min-width: 375px) {
     top: 7.6%;
   }
-
   @media (min-width: 425px) {
     top: 7.5%;
   }
-
   @media (min-width: 768px) {
     top: 11.5%;
   }

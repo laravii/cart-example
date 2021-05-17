@@ -1,8 +1,8 @@
 import React from 'react'
-import { ICartComponentProps } from '../../constants/types'
-import CartProducts from '../CartProducts'
+import { ICartComponentProps } from './interface'
 
 import { Container, Line, SubtotalContainer } from './styles'
+import Product from '../ProductCard'
 
 function Cart({ items, isOpen }: ICartComponentProps) {
   const values = items.map((item) => item.price.value)
@@ -24,7 +24,9 @@ function Cart({ items, isOpen }: ICartComponentProps) {
 
   return (
     <Container showingCart={isOpen}>
-      <CartProducts isOpen={isOpen} items={items} />
+      {items.map((item, index) => {
+        return <Product item={item} index={index} isOpen={isOpen} />
+      })}
       <SubtotalContainer>
         <strong>subtotal</strong>
         <Line />

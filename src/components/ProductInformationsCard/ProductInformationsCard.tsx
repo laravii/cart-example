@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
-import { IAvaliableProduct } from '../../constants/types'
-import { CartContext } from '../../contexts/CartContext'
+import { IAvaliableProduct } from '../../constants/productInterfaces'
+import { CartContext } from '../../contexts/Cart/CartContext'
 
 import {
   InfosProductCard,

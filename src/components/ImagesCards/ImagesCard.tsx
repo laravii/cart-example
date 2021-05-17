@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { IImages } from '../../constants/types'
+import { IImages } from './interface'
 
 import { Container, Cards, ImageButton, SelectedImage } from './styles'
 

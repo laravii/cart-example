@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react'
-import { CartContext } from './contexts/CartContext'
+import { CartContext } from './contexts/Cart/CartContext'
 import Home from './pages/Home'
 
 function App() {

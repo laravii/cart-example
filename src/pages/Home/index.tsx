@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../../components/Header'
-import AvaliableProductsCard from '../../components/AvaliableProductsCard'
+import AvaliableProductsCard from '../../components/AvaliableProductsCard/Card'
 import dataItems from '../../db/database.json'
 
 import { Container } from './styles'

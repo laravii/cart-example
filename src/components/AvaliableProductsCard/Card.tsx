@@ -1,6 +1,7 @@
 import React from 'react'
-import { IItems } from '../../constants/types'
-import ImagesCard from '../ImagesCards'
+import { IItems } from '../../constants/productInterfaces'
+
+import ImagesCard from '../ImagesCards/ImagesCard'
 import ProductInformationsCard from '../ProductInformationsCard'
 
 import { Container } from './styles'
